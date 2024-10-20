@@ -11,7 +11,6 @@
     $email = $_POST["email"];
     $optionProject = $_POST["optionProject"];
 
-
      //CREA ARRAY PARA RECIPIENTS
      $recipients = array();   
      $nombreUsuario1 = "Edson Roberto Rubio Lopez";
@@ -36,7 +35,6 @@
         array("var_name" => "optionProject", "var_val" => "{$optionProject}"), 
     );
     
- 
      ##SE EJECUTA FUNCIÓN
      sendEmail($recipients, $mailSender, $mailSubject, $mailPath, $mailData, $mailHost, $mailUser, $mailPass);   
 ?>
